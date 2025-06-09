@@ -10,6 +10,15 @@ This project is a content-based news recommender. The idea is simple: you type i
 - Recommends the most similar news articles
 - Displays the results in a clean HTML interface
 
+## Dataset
+
+This project uses the MIND (Microsoft News Dataset) which contains thousands of news articles.
+
+You can download the dataset from Kaggle:  
+https://www.kaggle.com/datasets/arashnic/mind-news-dataset
+
+> **Note:** The dataset is too large to upload directly to GitHub. Please download it manually from the link above and place it in the `data/` folder of the project.
+
 ## How it works
 
 - The model used is `all-MiniLM-L6-v2` from Sentence Transformers
@@ -17,4 +26,3 @@ This project is a content-based news recommender. The idea is simple: you type i
 - Similarity is calculated using cosine similarity on sentence embeddings
 - Flask is used to create a simple web interface
 - ngrok is used to temporarily share the app online
-
